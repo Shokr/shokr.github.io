@@ -95,11 +95,11 @@ var Terminal = Terminal || function(cmdLineContainer, outputContainer) {
 
       switch (cmd) {
         case 'clear':
-          output_.innerHTML = '<img align="left" src="pic.jpg" width="100" height="100" style="padding: 18.1px 10px 20px 0px"><h2 style="letter-spacing: 4px">Shubham Tatvamasi</h2><p>' + new Date() + '</p><p>Enter "help" for more information.</p>';
+          output_.innerHTML = '<img align="left" src="pic.jpg" width="100" height="100" style="padding: 18.1px 10px 20px 0px"><h2 style="letter-spacing: 4px">Mohammed Shokr</h2><p>' + new Date() + '</p><p>Enter "help" for more information.</p>';
           this.value = '';
           return;
         case 'c':
-          output_.innerHTML = '<img align="left" src="pic.jpg" width="100" height="100" style="padding: 18.1px 10px 20px 0px"><h2 style="letter-spacing: 4px">Shubham Tatvamasi</h2><p>' + new Date() + '</p><p>Enter "help" for more information.</p>';
+          output_.innerHTML = '<img align="left" src="pic.jpg" width="100" height="100" style="padding: 18.1px 10px 20px 0px"><h2 style="letter-spacing: 4px">Mohammed Shokr</h2><p>' + new Date() + '</p><p>Enter "help" for more information.</p>';
           this.value = '';
           return;
         case 'clock':
@@ -123,7 +123,7 @@ var Terminal = Terminal || function(cmdLineContainer, outputContainer) {
           output('<div class="ls-files">' + CMDS_.join('<br>') + '</div>');
           break;
         case 'name':
-          output('Shubham Tatvamasi');
+          output('Mohammed Shokr');
           break;
         case 'q':
           window.close();
@@ -134,10 +134,17 @@ var Terminal = Terminal || function(cmdLineContainer, outputContainer) {
           location.reload();
           break;
         case 'uname':
-          output(navigator.appVersion);
+          output(navigator.userAgent);
+          output("Connected: "+navigator.onLine);
           break;
         case 'whoami':
-          output('I am Programmer by heart and profession :)');
+          output('I am Mohammed Shokr Blockchain Developer  :)');
+          output('keep in touch:- ');
+          output('<a id="contact_link" href="mailto:mohammedshokr2014@gmail.com" target="_blank"> Email: mohammedshokr2014"@"gmail.com </a>');
+          output('<a id="contact_link" href="https://twitter.com/imohamedshokr" target="_blank"> Twitter </a>');
+          output('<a id="contact_link" href="https://www.linkedin.com/in/mohammedshokr" target="_blank"> LinkedIn </a>');
+          output('<a id="contact_link" href="https://github.com/Shokr" target="_blank"> Github </a>');
+          output('<a id="contact_link" href="https://www.upwork.com/o/profiles/users/_~01362bc481aba5fea8/" target="_blank"> Hire Me ! </a>');
           break;
         default:
           if (cmd) {

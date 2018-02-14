@@ -3,7 +3,7 @@ $(function() {
 $.getJSON('https://ipinfo.io', function(data){
   
   // Set the command-line prompt to include the user's IP Address
-    $('.prompt').html('[shubham@' + data['ip'] + '] # ');
+    $('.prompt').html('[shokr@' + data['city'] + "." +data['country'] + '] # ');
 
       });
 
