@@ -11,7 +11,7 @@ var Terminal = Terminal || function(cmdLineContainer, outputContainer) {
   var output_ = document.querySelector(outputContainer);
 
   const CMDS_ = [
-    'clear', 'clock', 'date', 'echo', 'help', 'name', 'reload', 'uname', 'whoami'
+    'clear', 'clock', 'date', 'echo', 'help', 'name', 'reload', 'uname', 'whoami', 'projects'
   ];
   
   var fs_ = null;
@@ -138,13 +138,17 @@ var Terminal = Terminal || function(cmdLineContainer, outputContainer) {
           output("Connected: "+navigator.onLine);
           break;
         case 'whoami':
-          output("Passionate software developer focusing on web development using Javascript, an all-round geek who loves reading and writing in technology, I've graduated from the faculty of Computers and Information Science, with Full stack web development experience.");
+          output("Passionate software developer focusing on web development using Python, an all-round geek who loves reading and writing in technology, I've graduated from the faculty of Computers and Information Science, with Full stack web development experience.");
           output('keep in touch:- ');
           output('<a id="contact_link" href="mailto:mohammedshokr2014@gmail.com" target="_blank"> Email: mohammedshokr2014"@"gmail.com </a>');
-          output('<a id="contact_link" href="https://twitter.com/imohamedshokr" target="_blank"> Twitter </a>');
-          output('<a id="contact_link" href="https://www.linkedin.com/in/mohammedshokr" target="_blank"> LinkedIn </a>');
+          output('<a id="contact_link" href="https://twitter.com/MuhammedShokr" target="_blank"> Twitter </a>');
+          output('<a id="contact_link" href="https://www.linkedin.com/in/muhammedshokr/" target="_blank"> LinkedIn </a>');
           output('<a id="contact_link" href="https://github.com/Shokr" target="_blank"> Github </a>');
-          output('<a id="contact_link" href="https://www.upwork.com/o/profiles/users/_~01362bc481aba5fea8/" target="_blank"> Hire Me ! </a>');
+          output('<a id="contact_link" href="http://shokr.works/" target="_blank"> shokr.works </a>');
+          break;
+        case 'projects':
+          output('<a id="contact_link" href="https://github.com/Shokr/Python_Playbook" target="_blank"> Python_Playbook </a>');
+          output('<a id="contact_link" href="https://github.com/Shokr/Learn_NLP" target="_blank"> Learn_NLP </a>');
           break;
         default:
           if (cmd) {
